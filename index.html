@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EdgeMatch</title>
+<meta name="description" content="경쟁사 공구 품번 하나로 여러 브랜드의 대응 제품과 비교 근거, 실제 주문 코드를 찾습니다. One competitor part number, matching cutting tools across brands.">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23233340'/%3E%3Cpath d='M8 22 16 8l8 14z' fill='none' stroke='%2383dfcf' stroke-width='2.5'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#f4f5f6;--ink:#1d252c;--muted:#56626c;--line:#d5dade;--accent:#0f6f63;--panel:#ffffff}
+@media (prefers-color-scheme:dark){:root{--bg:#111820;--ink:#e8eef2;--muted:#9fb0bb;--line:#2a3742;--accent:#83dfcf;--panel:#17212a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 system-ui,-apple-system,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+main{max-width:720px;margin:0 auto;padding:7vh 20px 4vh}
+nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:6vh}
+.logo{font-weight:800;letter-spacing:-.02em;font-size:1.25rem}
+.logo span{color:var(--accent)}
+.badge{font:600 .7rem/1 ui-monospace,"SFMono-Regular",Consolas,monospace;border:1px solid var(--line);border-radius:3px;padding:3px 6px;margin-left:8px;vertical-align:middle;color:var(--muted)}
+.lang a{color:var(--muted);text-decoration:none;margin-left:12px;font-size:.9rem}
+.lang a[aria-current]{color:var(--ink);font-weight:600}
+h1{font-size:clamp(1.8rem,5vw,2.6rem);line-height:1.25;letter-spacing:-.02em;margin:0 0 1.2rem}
+p{margin:0 0 1rem;color:var(--muted)}
+p.lead{color:var(--ink);font-size:1.08rem}
+.code{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:1px 6px;color:var(--ink);white-space:nowrap}
+section.access{margin:2.4rem 0;padding:1.4rem 1.4rem .6rem;background:var(--panel);border:1px solid var(--line);border-radius:4px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 1rem}
+.cta a{display:inline-block;padding:.6rem 1rem;border-radius:4px;border:1px solid var(--accent);color:var(--accent);text-decoration:none;font-weight:600}
+.cta a.primary{background:var(--accent);color:var(--panel)}
+footer{margin-top:3rem;border-top:1px solid var(--line);padding-top:1rem;display:grid;grid-template-columns:auto 1fr;gap:.2rem 1rem;font-size:.85rem;color:var(--muted)}
+footer dt{font-family:ui-monospace,"SFMono-Regular",Consolas,monospace;font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;padding-top:.15rem}
+footer dd{margin:0}
+footer a{color:var(--muted)}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+<nav>
+  <div class="logo">Edge<span>Match</span><span class="badge">BETA</span></div>
+  <div class="lang"><a href="?lang=ko" data-lang="ko">한국어</a><a href="?lang=en" data-lang="en">English</a></div>
+</nav>
+
+<article lang="ko" data-section="ko">
+  <h1>경쟁사 품번 하나로,<br>여러 브랜드의 대응 제품을</h1>
+  <p class="lead">선삭 인서트와 솔리드 엔드밀 품번(예: <span class="code">CNMG120408-MT</span>)을 넣으면 브랜드별 대응 제품, 비교 근거, 실제 주문 코드를 보여 줍니다. 제조사가 공개한 카탈로그를 기준으로 합니다.</p>
+  <p>현장 엔지니어와 고객지원, 대리점 담당자가 경쟁사 품번 검토를 기다리지 않고 바로 답하도록 만들었습니다.</p>
+  <section class="access">
+    <p><strong>지금은 초대한 회사만 쓰는 BETA입니다.</strong> 30분 화상 시연 뒤 회사 전용 체험 링크를 드립니다.</p>
+    <div class="cta">
+      <a class="primary" href="https://www.linkedin.com/in/jungcheolin/" rel="noopener" target="_blank">LinkedIn으로 시연 요청</a>
+      <a href="mailto:jung@cheol.in?subject=EdgeMatch%20%EC%8B%9C%EC%97%B0%20%EC%9A%94%EC%B2%AD">메일로 시연 요청</a>
+    </div>
+  </section>
+  <p>만든 사람: 정철인 — 절삭공구 설계·기술지원, 제품 기획, Sales Enablement · <a href="https://cheol.in" rel="noopener">cheol.in</a></p>
+  <p>제조사와 관계없는 독립 서비스입니다. 브랜드명과 품번은 비교 목적으로만 표기합니다.</p>
+</article>
+
+<article lang="en" data-section="en" hidden>
+  <h1>One competitor part number.<br>Matching products across brands.</h1>
+  <p class="lead">Enter a turning insert or solid end mill code (e.g. <span class="code">CNMG120408-MT</span>) to see the matching products by brand, the comparison evidence and the actual order codes, based on manufacturers' public catalogs.</p>
+  <p>Built so field engineers, customer service and distributor staff can answer competitor part-number questions on the spot, without waiting.</p>
+  <section class="access">
+    <p><strong>Invitation-only BETA.</strong> After a 30-minute video demo, your company gets its own trial link.</p>
+    <div class="cta">
+      <a class="primary" href="https://www.linkedin.com/in/jungcheolin/" rel="noopener" target="_blank">Request a demo on LinkedIn</a>
+      <a href="mailto:jung@cheol.in?subject=EdgeMatch%20demo%20request">Request a demo by email</a>
+    </div>
+  </section>
+  <p>Made by Cheol-In (Jonathan) Jung — cutting-tool engineering, product management and sales enablement · <a href="https://cheol.in" rel="noopener">cheol.in</a></p>
+  <p>Independent service, not affiliated with any manufacturer. Brand names and part numbers are used for comparison only.</p>
+</article>
+
+<footer>
+  <dt>Made by</dt><dd>정철인 · Cheol-In Jung (Jonathan) — Make knowledge work.</dd>
+  <dt>Sheet</dt><dd>edgemat.ch</dd>
+  <dt>Contact</dt><dd><a href="mailto:jung@cheol.in">jung@cheol.in</a> · <a href="https://www.linkedin.com/in/jungcheolin/" rel="noopener">LinkedIn</a></dd>
+</footer>
+</main>
+<script>
+(function(){
+  var params=new URLSearchParams(location.search);
+  var lang=params.get('lang')||((navigator.language||'').toLowerCase().indexOf('ko')===0?'ko':'en');
+  if(lang!=='ko'&&lang!=='en')lang='ko';
+  document.documentElement.lang=lang;
+  document.querySelectorAll('[data-section]').forEach(function(el){el.hidden=el.getAttribute('data-section')!==lang;});
+  document.querySelectorAll('[data-lang]').forEach(function(a){if(a.getAttribute('data-lang')===lang)a.setAttribute('aria-current','true');});
+})();
+</script>
+</body>
+</html>
