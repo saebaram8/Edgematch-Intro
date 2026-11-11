@@ -16,7 +16,7 @@
 | 한정 색상 | `edgematch-arena-red.svg`, `edgematch-arena-black.svg` | red = **굿즈 전용**(티셔츠·스티커·머그) / black = 절제가 필요한 자리. UI·문서의 기본은 Y3(amber) |
 | 흑백(1도) | `edgematch-arena-mono-black.svg`, `-mono-white.svg` | 1도 인쇄·각인·복사·팩스. 원판이 아니라 **링 선(두께 9) + 날 + 별을 하나의 복합 패스로 합친 것**(접합부 이음새 없음; 같은 색 도형을 따로 겹쳐 그리지 않는다). 작은 크기는 `-small-mono-*`, `-micro-mono-*` |
 | 작은 크기 | `edgematch-arena-small.svg`(24~47px), `edgematch-arena-micro.svg`(≤24px) | 날 키움·링 여백 제거·**별은 핫 스파크 #FF5A2E**(흰 별 금지: 눈송이로 읽힘). 큰 버전을 그냥 줄이지 않는다 |
-| 워드마크 | `assets/logo/05-wordmark/` | **edgemat✱ch** — 마침표 자리에 별. IBM Plex Sans Bold, 자간 -3%, 별 0.32em 베이스라인 |
+| 워드마크 | `assets/logo/05-wordmark/` | **edgemat✱ch** — 마침표 자리에 별. IBM Plex Sans Bold, 자간 -3%, 별 0.32em, 중심 = 마침표 중심 |
 | 워드마크 조합 | `assets/logo/02-lockup/` | 배지 + edgemat✱ch. 가로(헤더·문서 상단), 세로(프로필·명함 뒷면). 기본·반전·흑백. 첫 등장 자리는 항상 배지와 함께(단독 워드마크는 브랜드가 알려진 뒤) |
 | 앱 아이콘 | `assets/logo/03-appicon/` | 1024 정사각 '용기'(흰 / #0E0E0F 바탕). 스토어 규격 대응일 뿐 별도 디자인이 아님 |
 
