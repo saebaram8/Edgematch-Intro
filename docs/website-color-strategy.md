@@ -10,7 +10,7 @@
 | ISO 513 색 | `dictionary-viz.js`에 P #356ea7 · M #c99618 · K #bd5149 · N #2e8b68 · S #b36b39 · H #697584 | 적록색약(deutan)에서 **K/N 대비 1.05 → 구분 불가**. 색만으로 의미 전달 | 라이트·다크 두 벌로 재정의, 글자 동반 필수 |
 | A/B 비교색(칩맵) | A 청록 #00877d, B 파랑 #5577c2 | B 파랑이 ISO **P(파랑)와 충돌** | A 앰버 실선, B 무채색 점선 |
 | 서체 | Segoe UI / 맑은 고딕 / Consolas | 1·l·I, 0·O 구분 안 됨, 한·영 굵기 불균형 | **Pretendard GOV**(cdnjs dynamic subset), 숫자 열 tabular-nums |
-| 로고 | 텍스트 "Edge**Match**" | 마크 없음 | 아레나 조합(헤더), small(내비 ≤47px), micro(파비콘) |
+| 로고 | 텍스트 "Edge**Match**" | 마크 없음 | 아레나 조합(헤더), small(내비 ≤47px), micro(파비콘). 밝은 배경 = Y3, 어두운 배경 = 레드(흰 날) |
 
 ## 1. 두 영역 원칙 (변하지 않는 규칙)
 - **데이터 영역**(표·칩·바·그래프·칩맵): ISO 6색 + 무채색 + A/B 비교색만.
@@ -54,7 +54,7 @@
 | 자리 | 파일 | 크기 |
 |---|---|---|
 | 사이트 헤더(소개) | `02-lockup/edgematch-lockup-horizontal-small.svg` | 배지 32px (small 변형이라 20~47px 안전) |
-| 앱 사이드바 | `02-lockup/edgematch-lockup-horizontal-small-dark.svg` | 배지 36px |
+| 앱 사이드바(다크) | `02-lockup/edgematch-lockup-horizontal-small-dark.svg` (레드 아레나) | 배지 36px |
 | 파비콘 | `04-png/favicon.ico` + `01-arena/edgematch-arena-micro.svg` | 16/32/48 |
 | 터치 아이콘 | `04-png/appicon-180.png` | 180 |
 | 문서·제안서 표지 | `02-lockup/edgematch-lockup-horizontal.svg` | 배지 ≥64px |
