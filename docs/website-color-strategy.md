@@ -54,7 +54,7 @@
 | 자리 | 파일 | 크기 |
 |---|---|---|
 | 사이트 헤더(소개) | `02-lockup/edgematch-lockup-horizontal-small.svg` | 배지 32px (small 변형이라 20~47px 안전) |
-| 앱 사이드바 | `02-lockup/edgematch-lockup-horizontal-small-white.svg` | 배지 36px |
+| 앱 사이드바 | `02-lockup/edgematch-lockup-horizontal-small-dark.svg` | 배지 36px |
 | 파비콘 | `04-png/favicon.ico` + `01-arena/edgematch-arena-micro.svg` | 16/32/48 |
 | 터치 아이콘 | `04-png/appicon-180.png` | 180 |
 | 문서·제안서 표지 | `02-lockup/edgematch-lockup-horizontal.svg` | 배지 ≥64px |
