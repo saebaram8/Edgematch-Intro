@@ -1,0 +1,97 @@
+:root {
+  /* ---- brand (chrome only) ---- */
+  --brand-ink: #161616;
+  --brand-charcoal: #2B2D31;
+  --brand-amber: #F2B01E;
+  --brand-spark: #E8392B;
+  --brand-paper: #FAFAF8;
+  --brand-white: #FFFFFF;
+  --brand-line: #E4E2DD;
+  --brand-muted: #555555;
+  --brand-hint: #8A8A8A;
+  --brand-spark_hot: #FF5A2E;
+  --brand-charcoal_lifted: #34373D;
+  /* ---- theme: light (default) ---- */
+  --t-bg: #FAFAF8;
+  --t-panel: #FFFFFF;
+  --t-ink: #161616;
+  --t-muted: #555555;
+  --t-hint: #8A8A8A;
+  --t-line: #E4E2DD;
+  --t-chrome: #2B2D31;
+  --t-chrome-text: #FFFFFF;
+  --t-accent: #F2B01E;
+  --t-action: #E8392B;
+  --t-action-text: #FFFFFF;
+  --t-focus: #E8392B;
+  /* ---- ISO 513 (data only; always with the letter) ---- */
+  --iso-p: #1F5FC4;
+  --iso-p-tint: #DCE6F7;
+  --iso-p-text: #FFFFFF;
+  --iso-m: #FFD100;
+  --iso-m-tint: #FFF4BF;
+  --iso-m-text: #161616;
+  --iso-k: #B5121B;
+  --iso-k-tint: #F6D6D8;
+  --iso-k-text: #FFFFFF;
+  --iso-n: #3FBF7F;
+  --iso-n-tint: #DCF3E7;
+  --iso-n-text: #161616;
+  --iso-s: #DD7118;
+  --iso-s-tint: #FBE4D0;
+  --iso-s-text: #161616;
+  --iso-h: #7A8089;
+  --iso-h-tint: #E6E8EB;
+  --iso-h-text: #FFFFFF;
+  --cmp-a: #F2B01E; --cmp-b: #161616; --cmp-overlap: rgba(242,176,30,0.16);
+  --font-ui: 'Pretendard GOV', Pretendard, system-ui, -apple-system, 'Segoe UI', 'Malgun Gothic', sans-serif;
+  --font-code: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+}
+[data-theme='dark'] {
+  --t-bg: #141517;
+  --t-panel: #1E2023;
+  --t-ink: #EDEDEA;
+  --t-muted: #A9ABB0;
+  --t-hint: #7E8187;
+  --t-line: #2E3136;
+  --t-chrome: #0E0E0F;
+  --t-chrome-text: #EDEDEA;
+  --t-accent: #F2B01E;
+  --t-action: #E8392B;
+  --t-action-text: #FFFFFF;
+  --t-focus: #F2B01E;
+  --iso-p: #5B8FE0;
+  --iso-p-tint: #2A3A52;
+  --iso-p-text: #161616;
+  --iso-m: #FFD54A;
+  --iso-m-tint: #4A4120;
+  --iso-m-text: #161616;
+  --iso-k: #E0514F;
+  --iso-k-tint: #4A2B2B;
+  --iso-k-text: #161616;
+  --iso-n: #5FD49A;
+  --iso-n-tint: #23412F;
+  --iso-n-text: #161616;
+  --iso-s: #E2781A;
+  --iso-s-tint: #4A3220;
+  --iso-s-text: #161616;
+  --iso-h: #9AA0A8;
+  --iso-h-tint: #383B40;
+  --iso-h-text: #161616;
+  --cmp-b: #EDEDEA;
+}
+
+body { font-family: var(--font-ui); color: var(--t-ink); background: var(--t-bg); }
+.num, td.num { font-variant-numeric: tabular-nums; }
+code, .code { font-family: var(--font-code); font-variant-numeric: tabular-nums; }
+.iso-chip { display:inline-flex; align-items:center; justify-content:center; min-width:1.6em; height:1.6em; border-radius:.35em; font-weight:700; }
+.iso-chip[data-iso='P'] { background: var(--iso-p); color: var(--iso-p-text); }
+.iso-chip[data-iso='M'] { background: var(--iso-m); color: var(--iso-m-text); }
+.iso-chip[data-iso='K'] { background: var(--iso-k); color: var(--iso-k-text); }
+.iso-chip[data-iso='N'] { background: var(--iso-n); color: var(--iso-n-text); }
+.iso-chip[data-iso='S'] { background: var(--iso-s); color: var(--iso-s-text); }
+.iso-chip[data-iso='H'] { background: var(--iso-h); color: var(--iso-h-text); }
+
+:focus-visible { outline: 2px solid var(--t-focus); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+/* Rules: brand-spark/amber never inside tables, chips, bars or charts. ISO colors never without the letter. */
