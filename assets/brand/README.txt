@@ -3,7 +3,7 @@ Edgematch 로고 세트 v4 — 아레나 단일 체계 (2026-11-11)
 
 마크는 아레나 하나뿐이다. 링 없는 마크, 사각 풀블리드 아이콘은 폐기.
 모든 SVG는 스트로크·텍스트 없이 채움 패스만 → Illustrator에서 파일 > 열기 로 바로 편집.
-워드마크(IBM Plex Sans Bold, 자간 -3%)는 윤곽선화. 형태는 edgemat✱ch — 마침표 자리에 별(0.32em, 중심 = 마침표 중심, 양옆 0.06em). 레이어 ID: ring / edge-left / edge-right / spark / wordmark
+워드마크(IBM Plex Sans Bold, 자간 -3%)는 윤곽선화. 형태는 edgemat✱ch — 마침표 자리에 별(0.32em, 중심 = 베이스라인, 양옆 0.06em). 레이어 ID: ring / edge-left / edge-right / spark / wordmark
 
 색
   Charcoal #2B2D31 (링) · Amber #F2B01E (날) · Spark #E8392B (별) · Ink #161616 · White
@@ -17,11 +17,11 @@ Edgematch 로고 세트 v4 — 아레나 단일 체계 (2026-11-11)
               edgematch-arena-small-mono-*.svg / micro-mono-*.svg  작은 크기 흑백(링 두께 12/14), 역시 단일 패스
               edgematch-arena-small.svg   48px 미만용(컴팩트): 날 키움, 링 여백 제거, 별은 핫 스파크 #FF5A2E·두껍게
               edgematch-arena-micro.svg   24px 이하 파비콘용: 더 굵게
-              (작은 크기에서 로고의 역할은 '이해'가 아니라 '식별' — 차콜 원 + 앰버 쐐기 + 흰 별의 서명)
+              (작은 크기에서 로고의 역할은 '이해'가 아니라 '식별' — 차콜 원 + 앰버 쐐기 + 빨간 별의 서명)
               edgematch-arena-dark.svg / -small-dark / -micro-dark   어두운 배경용 = Y3 그대로, 디스크만 한 단계 밝은 #34373D.
               어두운 배경은 거의 검정(#0E0E0F~#141517)이어야 디스크가 선다. 푸른 회색(#1E2023 등) 위에는 올리지 말 것.
   02-lockup/  가로·세로 워드마크 조합 (기본 / -dark 어두운 배경 / 흑백 검정 / 흑백 흰색) — 워드마크는 edgemat✱ch (별이 마침표)
-  05-wordmark/ edgemat✱ch 워드마크 단독 (기본·반전·흑백 검정·흰색). IBM Plex Sans Bold, 자간 -3%, 별 0.32em, 중심을 마침표 중심(베이스라인 위 0.08em)에
+  05-wordmark/ edgemat✱ch 워드마크 단독 (기본·반전·흑백 검정·흰색). IBM Plex Sans Bold, 자간 -3%, 별 0.32em, 중심을 베이스라인에(별이 반쯤 내려앉음)
   03-appicon/ 1024 정사각 '용기' — 흰 바탕 / 거의 검정(#0E0E0F) 바탕에 아레나 84%. 디자인이 아니라 스토어 규격 대응.
   04-png/     미리보기, favicon-16/24(micro)·32/48(small)·180/512(기본), favicon.ico, appicon-180/512
 
