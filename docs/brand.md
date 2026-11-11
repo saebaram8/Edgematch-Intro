@@ -12,16 +12,16 @@
 | 용도 | 파일 | 규칙 |
 |---|---|---|
 | 기본 마크 | `assets/logo/01-arena/edgematch-arena-amber.svg` | 모든 자리의 기본. 차콜 링 + 앰버 날 + 빨간 별 |
-| 어두운 배경 | `edgematch-arena-dark.svg`, `-small-dark`, `-micro-dark` | **레드 아레나**: 빨간 디스크 + 흰 날 + 검정 별(small/micro는 흰 별). 다크 UI·영상·검정 인쇄물. 조합은 `02-lockup/*-dark.svg`. 레드가 과한 자리는 `-dark-outline`(흰 링 선 + 앰버 날) |
-| 한정 색상 | `edgematch-arena-red.svg`, `edgematch-arena-black.svg` | red(밝은 배경 위, 검정 날) = 굿즈·캠페인 / black = 절제가 필요한 자리. 밝은 배경의 기본은 amber |
+| 어두운 배경 | `edgematch-arena-dark.svg`, `-small-dark`, `-micro-dark` | Y3 그대로, 디스크만 #34373D로 한 단계 밝게. 바탕은 거의 검정(#0E0E0F~#141517)이어야 함. 조합은 `02-lockup/*-dark.svg` |
+| 한정 색상 | `edgematch-arena-red.svg`, `edgematch-arena-black.svg` | red = **굿즈 전용**(티셔츠·스티커·머그) / black = 절제가 필요한 자리. UI·문서의 기본은 Y3(amber) |
 | 흑백(1도) | `edgematch-arena-mono-black.svg`, `-mono-white.svg` | 1도 인쇄·각인·복사·팩스. 원판이 아니라 **링 선(두께 9) + 날 + 별을 하나의 복합 패스로 합친 것**(접합부 이음새 없음; 같은 색 도형을 따로 겹쳐 그리지 않는다). 작은 크기는 `-small-mono-*`, `-micro-mono-*` |
-| 작은 크기 | `edgematch-arena-small.svg`(24~47px), `edgematch-arena-micro.svg`(≤24px) | 날 키움·링 여백 제거·**별 흰색**. 큰 버전을 그냥 줄이지 않는다 — 작은 크기의 역할은 이해가 아니라 식별 |
+| 작은 크기 | `edgematch-arena-small.svg`(24~47px), `edgematch-arena-micro.svg`(≤24px) | 날 키움·링 여백 제거·**별은 핫 스파크 #FF5A2E**(흰 별 금지: 눈송이로 읽힘). 큰 버전을 그냥 줄이지 않는다 |
 | 워드마크 | `assets/logo/05-wordmark/` | **edgemat✱ch** — 마침표 자리에 별. IBM Plex Sans Bold, 자간 -3%, 별 0.32em 베이스라인 |
 | 워드마크 조합 | `assets/logo/02-lockup/` | 배지 + edgemat✱ch. 가로(헤더·문서 상단), 세로(프로필·명함 뒷면). 기본·반전·흑백. 첫 등장 자리는 항상 배지와 함께(단독 워드마크는 브랜드가 알려진 뒤) |
 | 앱 아이콘 | `assets/logo/03-appicon/` | 1024 정사각 '용기'(흰 / #0E0E0F 바탕). 스토어 규격 대응일 뿐 별도 디자인이 아님 |
 
 기하 규칙(200단위 박스): 링 반지름 92. 날은 바깥 변 수직·바닥 여유각 9°·날끝이 최저점(플랭크면 정면), 링 밖에서 들어와 링에 잘림. 별은 세 선 60° 간격·길이 58·두께 12·둥근 끝, 중심 = 날끝 높이(y120), 팔은 절삭날에 수직. 별–날 간격 7.7. 여백은 링 두께의 3배(27) 이상. 크기별: ≥48px 기본 / 24~47px small / ≤24px micro.
-배경 규칙: **밝은 배경 = Y3**(차콜 디스크·앰버 날·빨간 별), **어두운 배경 = 레드**(`-dark`: 빨간 디스크·흰 날·검정 별). 차콜 디스크를 어두운 배경에 올리면 링이 사라지고, 검정 날 레드를 어두운 배경에 올리면 원이 베어 먹힌 것처럼 보이므로 둘 다 금지. 어두운 배경에서 날은 항상 흰색.
+배경 규칙: **마스터는 Y3 하나.** 밝은 배경 = 기본(디스크 #2B2D31). 어두운 배경 = `-dark`(디스크 #34373D) — 단, 바탕이 거의 검정(#0E0E0F~#141517)일 때만 디스크가 선다(대비 1.6). 푸른 회색 다크(#1E2023 등) 위에는 올리지 않는다. 별은 항상 빨강(≥48px #E8392B, <48px #FF5A2E). 레드 아레나는 굿즈 전용.
 금지: 날을 둥글리기 / 별을 날 위에 겹치기 / 링을 빼고 날·별만 쓰기 / 사각 풀블리드 / 흑백에서 원판에 흰 날 빼기 / 새 색 조합 만들기.
 ## 3. 색 — 두 영역, 섞지 않는다
 **브랜드 색(크롬 전용)**: Ink #161616 · Charcoal #2B2D31 · Amber #F2B01E · Spark #E8392B · Paper #FAFAF8 · Line #E4E2DD.

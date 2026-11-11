@@ -10,7 +10,7 @@
 | ISO 513 색 | `dictionary-viz.js`에 P #356ea7 · M #c99618 · K #bd5149 · N #2e8b68 · S #b36b39 · H #697584 | 적록색약(deutan)에서 **K/N 대비 1.05 → 구분 불가**. 색만으로 의미 전달 | 라이트·다크 두 벌로 재정의, 글자 동반 필수 |
 | A/B 비교색(칩맵) | A 청록 #00877d, B 파랑 #5577c2 | B 파랑이 ISO **P(파랑)와 충돌** | A 앰버 실선, B 무채색 점선 |
 | 서체 | Segoe UI / 맑은 고딕 / Consolas | 1·l·I, 0·O 구분 안 됨, 한·영 굵기 불균형 | **Pretendard GOV**(cdnjs dynamic subset), 숫자 열 tabular-nums |
-| 로고 | 텍스트 "Edge**Match**" | 마크 없음 | 아레나 조합(헤더), small(내비 ≤47px), micro(파비콘). 밝은 배경 = Y3, 어두운 배경 = 레드(흰 날) |
+| 로고 | 텍스트 "Edge**Match**" | 마크 없음 | 아레나 조합(헤더), small(내비 ≤47px), micro(파비콘). 밝은 배경 = Y3, 어두운 배경 = Y3 -dark(디스크 한 단계 밝게) |
 
 ## 1. 두 영역 원칙 (변하지 않는 규칙)
 - **데이터 영역**(표·칩·바·그래프·칩맵): ISO 6색 + 무채색 + A/B 비교색만.
@@ -21,16 +21,16 @@
 ## 2. 테마
 | 토큰 | 라이트 (소개 사이트·문서·인쇄 기본) | 다크 (앱 기본) |
 |---|---|---|
-| bg | #FAFAF8 | #1E2023 |
-| panel | #FFFFFF | #2B2D31 |
+| bg | #FAFAF8 | #141517 |
+| panel | #FFFFFF | #1E2023 |
 | ink / muted / hint | #161616 / #555555 / #8A8A8A | #EDEDEA / #A9ABB0 / #7E8187 |
-| line | #E4E2DD | #3E4148 |
-| chrome (헤더·사이드바) | #2B2D31 위 흰 글자 | #17181B 위 #EDEDEA |
+| line | #E4E2DD | #2E3136 |
+| chrome (헤더·사이드바) | #2B2D31 위 흰 글자 | #0E0E0F 위 #EDEDEA |
 | accent (링크·선택·하이라이트) | #F2B01E | #F2B01E |
 | action (주요 버튼·MATCH) | #E8392B 위 흰 글자 | #E8392B 위 흰 글자 |
 | focus ring | #E8392B | #F2B01E |
 
-앱이 다크인 이유는 유지한다(현장·야간·기존 사용자). 대신 배경의 푸른 기를 빼고 차콜 계열로 옮겨 로고의 링과 같은 재질이 되게 한다. 라이트 테마는 `data-theme` 토글로 제공하되 기본은 다크.
+앱이 다크인 이유는 유지한다(현장·야간·기존 사용자). 대신 배경의 푸른 기를 빼고 **거의 검정**으로 내린다 — 로고의 차콜 디스크(어두운 배경에서는 #34373D)가 서려면 바탕과 1.6 이상 차이가 필요하기 때문이다. 패널은 #1E2023, 크롬은 #0E0E0F. 라이트 테마는 `data-theme` 토글로 제공하되 기본은 다크.
 
 ## 3. ISO 513 데이터 색 (두 벌)
 | 군 | 라이트 fill / tint | 다크 fill / tint | 글자 |
@@ -54,7 +54,7 @@
 | 자리 | 파일 | 크기 |
 |---|---|---|
 | 사이트 헤더(소개) | `02-lockup/edgematch-lockup-horizontal-small.svg` | 배지 32px (small 변형이라 20~47px 안전) |
-| 앱 사이드바(다크) | `02-lockup/edgematch-lockup-horizontal-small-dark.svg` (레드 아레나) | 배지 36px |
+| 앱 사이드바(다크) | `02-lockup/edgematch-lockup-horizontal-small-dark.svg` (Y3, 디스크 #34373D) | 배지 36px |
 | 파비콘 | `04-png/favicon.ico` + `01-arena/edgematch-arena-micro.svg` | 16/32/48 |
 | 터치 아이콘 | `04-png/appicon-180.png` | 180 |
 | 문서·제안서 표지 | `02-lockup/edgematch-lockup-horizontal.svg` | 배지 ≥64px |

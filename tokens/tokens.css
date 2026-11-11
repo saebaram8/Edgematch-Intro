@@ -9,6 +9,8 @@
   --brand-line: #E4E2DD;
   --brand-muted: #555555;
   --brand-hint: #8A8A8A;
+  --brand-spark_hot: #FF5A2E;
+  --brand-charcoal_lifted: #34373D;
   /* ---- theme: light (default) ---- */
   --t-bg: #FAFAF8;
   --t-panel: #FFFFFF;
@@ -46,13 +48,13 @@
   --font-code: ui-monospace, 'Cascadia Mono', Consolas, monospace;
 }
 [data-theme='dark'] {
-  --t-bg: #1E2023;
-  --t-panel: #2B2D31;
+  --t-bg: #141517;
+  --t-panel: #1E2023;
   --t-ink: #EDEDEA;
   --t-muted: #A9ABB0;
   --t-hint: #7E8187;
-  --t-line: #3E4148;
-  --t-chrome: #17181B;
+  --t-line: #2E3136;
+  --t-chrome: #0E0E0F;
   --t-chrome-text: #EDEDEA;
   --t-accent: #F2B01E;
   --t-action: #E8392B;
